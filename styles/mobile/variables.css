@@ -1,0 +1,14 @@
+:root{
+    --h-font-size: 36px;
+    --text-color: #060A24;
+    --p-size: 14px;
+
+    --p-font-family: 'IBM Plex Mono', monospace;
+    --h-font-family: 'IBM Plex Sans', sans-serif;
+
+
+    /* Buttons */ 
+    --button-font-family: 'IBM Plex Mono', monospace;
+    --button-background-color: #00F3BB;
+    --button-text-color: #060A24;
+}

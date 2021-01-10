@@ -1,0 +1,333 @@
+@import "variables.css";
+
+/* Generales */
+.section-1, .section-2, .section-3, .section-4, .section-5, .section-6{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+h2, h1{
+    font-family: var(--h-font-family);
+    font-size: var(--h-font-size);
+    color: var(--text-color);
+    letter-spacing: 0;
+    line-height: 42px; 
+    font-weight: lighter;
+}
+h3{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--text-color);
+    letter-spacing: 0;
+    text-align: center;
+}
+p{
+    font-family: var(--p-font-family);
+    font-size: var(--p-size);
+    color: var(--text-color);
+    letter-spacing: 0;
+    line-height: 22px;
+}
+/* Contenedor Header */
+header{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #FFFFFF;
+}
+/* Contenedor Logo y Desplegable */
+.containerSect{
+    width: 100vw;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+/* Logo */
+.containerSect img{
+    margin: 10px 250px 10px 16px;
+    width: 24px;
+    height: 24px;
+}
+/* Barra */
+.icoBarra{
+    width: 18px;
+    height: 12px;
+    margin: 16px 19px 16px 0px;
+
+}
+.icoBarra i:nth-child(2){
+    display: none;
+    width: 18px;
+    height: 12px;
+}
+/* Desplegable */
+.desplegable{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 89vw;
+    top: 3vw;
+    opacity: 0%;
+}
+.navPrincipal{
+    display: none;
+    position: absolute;
+    top: 44px;
+}
+/* Desplegado Funcionando */
+input[name="desple"]:checked ~ .navPrincipal{
+    display: block;
+}
+input[name="desple"]:checked ~ .containerSect .icoBarra i:nth-child(2){
+    display: inline;
+}
+input[name="desple"]:checked ~ .containerSect .icoBarra i:nth-child(1){
+    display: none;
+}
+/* Barra de navegacion */
+li a {
+    font-size: 16px;
+    font-family: 'IBM Plex Mono';
+    text-decoration: none;
+    color: inherit;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+ul {
+    list-style-type: none;
+}
+/* Contenedor Flexbox */
+.containerNav{
+    background-color: #0000EC;
+    width: 100vw;
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+}
+/* Items Flexbox */
+.containerNav li{
+    margin: 16px 16px 8px 16px;
+    color: #FFFFFF;   
+}
+
+
+/* MAIN */
+
+/* Hero Seccion 1 */
+/* Containers */
+.section-1{
+    padding: 0px 0px 24px 0px;
+}
+
+/* H1 */
+.cont-hero-h1{
+    width: 288px;
+    height: 66px;
+    margin: 29px 0px 16px 16px;
+}
+.blueDot{
+    display: inline;
+}
+
+/* P */
+.cont-hero-intro-p{
+    width: 288px;
+    height: 66px;
+    margin: 16px 0px 36px 16px;
+}
+.block{
+    display: block;
+}
+
+/* Boton Conoce Mas */
+.button-1{
+    align-self: center;
+    padding: 13px 96px;
+    width: 288px;
+    height: 48px;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+}
+.button-1 a{
+    color: inherit;
+    font-family: var(--button-font-family);
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+/* Section 2 */
+.section-2{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
+    align-items: center;
+
+}
+.section-2 h2{
+    font-family: var(--h-font-family);
+    font-size: 36px;
+    font-weight: normal;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 42px;
+    padding: 64px 147px 21px 16px;
+}
+.section-2 div{
+    padding: 0px 11px 11px 11px;
+}
+.section-2 div:nth-last-child(1){
+    padding: 0px 11px 143.5px 11px;
+}
+
+.podCast1 iframe, .podCast2 iframe, .podCast3 iframe, .podCast4 iframe{
+    width: 100%;
+    height: 232px;
+}
+
+
+/* Section 3 */
+.phone{
+    position: absolute;
+    height: 519px;
+    width: 320px;
+    left: 0vw;
+    top: 1480px;
+}
+.phone img{
+    height: 519px;
+    width: 320px;
+}
+.section-3 div:nth-child(2){
+    padding: 400px 16px 100px 16px;
+    height: 84px;
+    width: 288px;
+    font-weight: lighter;
+}
+.dondeVenimos{
+    font-family: var(--h-font-family);
+    font-size: 36px;
+    color: var(--text-color);
+    letter-spacing: 0;
+    line-height: 42px;
+}
+.section-3-textCont{
+    align-self: center;
+    width: 288px;
+    height: 254px;
+    padding: 8px 16px;
+    box-sizing: content-box;
+}
+
+/* Section 4 */
+.section-4 div:first-child{
+    padding: 46px 16px 14px 16px;
+}
+.section-4 div:last-child{
+    display: flex;
+    flex-direction: column;
+}
+.section-4 div:last-child img{
+    width: 100vw;
+}
+
+/* Section 5 */
+.section-5{
+    padding: 48px 0px 42px 0px;
+}
+/* Iframes */
+.section-5 div:nth-child(even){
+    box-sizing: content-box;
+    align-self: center;
+    padding: 80px 108px 13px 108px;
+}
+/* H3 */
+.section-5 div:nth-child(odd){
+    padding: 0px 16px;
+    width: 288px;
+    align-self: center;
+}
+/* Section 6 */
+.section-6{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+}
+.section-6 div:nth-child(1){
+    width: 288px;
+    height: 126;
+    align-self: center;
+    text-align: center;
+
+}
+.h2Sect6{
+    color: #FFFFFF;
+    line-height: 42px;
+    padding: 64px 16px 0px 16px;
+}
+.button-2{
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    font-family: var(--button-font-family);
+    width: 288px;
+    height: 48px;
+    align-self: center;
+    text-align: center;
+    margin: 36px 16px 67px 16px;
+}
+.button-2 a{
+    color: inherit;
+    font-family: var(--button-font-family);
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-size: 16px;
+    position: relative;
+    top: 12px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    margin: 24px 46px 16px 47px;
+}
+footer nav{
+    width: 227px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 31px 45px;
+    color: var(--text-color);
+}
+.fab{
+    color: var(--text-color);
+}
+
+/* Efectos */
+/* Botones */
+.button-1:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFFFFF;
+}
+.button-2:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFFFFF;
+}
+
+/* Navs */
+.containerNav li:hover{
+    text-decoration: line-through;
+    color: var(--button-background-color);
+}
+.containerNav li:active{
+    color: rgba(6,10,36,0.56);
+}
